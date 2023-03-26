@@ -70,8 +70,8 @@ const main = async () => {
     }
 }
 // Every day at 8am
-cron.schedule('0 8 * * *', async () => {
-    await main()
-})
+// cron.schedule('0 8 * * *', async () => {
+await main()
+// })
 
 // task.stop(), task.start and task.destroy() could be callable from incoming http message with auth
